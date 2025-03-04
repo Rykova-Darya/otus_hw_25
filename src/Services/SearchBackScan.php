@@ -7,24 +7,6 @@ class SearchBackScan extends Search {
         parent::__construct($text, $mask, "Алгоритм обратного сравнения");
     }
 
-//    public function run() {
-//        $t = 0;
-//        $this->cmp = 0;
-//
-//        while ($t <= (mb_strlen($this->text) - mb_strlen($this->mask))) {
-//            $m = mb_strlen($this->mask) - 1;
-//            while ($m >= 0 && $this->text[$t + $m] == $this->mask[$m]) {
-//                $this->cmp++;
-//                $m--;
-//            }
-//            if ($m < 0) {
-//                return $t;
-//            }
-//            $t++;
-//        }
-//        return -1;
-//    }
-
     public function run() {
         $t = 0;
         $this->cmp = 0;
