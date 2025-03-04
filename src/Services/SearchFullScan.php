@@ -10,25 +10,6 @@ class SearchFullScan extends Search
         parent::__construct($text, $mask, $name);
     }
 
-//    public function run()
-//    {
-//        $this->cmp = 0;
-//        $t = 0;
-//
-//        while ($t <= (mb_strlen($this->text) - mb_strlen($this->mask))) {
-//            $m = 0;
-////            while ($m < mb_strlen($this->mask) && $this->text[$t + $m] == $this->mask[$m])
-//            while ($m < mb_strlen($this->mask) && mb_substr($this->text, $t + $m, 1) == mb_substr($this->mask, $m, 1)) {
-//                $this->cmp++;
-//                $m++;
-//            }
-//            if ($m == mb_strlen($this->mask)) {
-//                return $t;
-//            }
-//            $t++;
-//        }
-//        return -1;
-//    }
     public function run()
     {
         $this->cmp = 0;
